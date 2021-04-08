@@ -6,10 +6,6 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [
     {
-      path: '*',
-      redirect: '/'
-    },
-    {
       path: '/',
       name: 'Home',
       component: () => import('../views/frontend/Home.vue'),
@@ -79,5 +75,9 @@ export default new VueRouter({
           meta: { requiresAuth: true },
           component: () => import('../views/backend/Coupon.vue')
         }]
+    },
+    {
+      path: '*',
+      redirect: '/'
     }]
 })
