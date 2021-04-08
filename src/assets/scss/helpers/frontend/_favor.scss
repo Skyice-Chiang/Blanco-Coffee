@@ -1,0 +1,42 @@
+.favor-set {
+  height          : 100vh;
+  background-color: rgba($coffee-black, 0.8);
+}
+
+.favor-banner {
+  position           : relative;
+  min-height         : 480px;
+  background         : url("assets/images/banner/banner-favor.jpg") no-repeat;
+  background-position: center;
+  background-size    : cover;
+
+  &::after {
+    content         : '';
+    height          : 100%;
+    width           : 100%;
+    background-color: #000;
+    position        : absolute;
+    z-index         : 1;
+    opacity         : 0.2;
+  }
+}
+
+@media(max-width:768px) {
+  .favor-banner {
+    min-height: 300px;
+  }
+}
+
+.favor-bg-color {
+  background-color: rgba($coffee-black, 0.8);
+}
+
+.favor-content {
+  padding: 60px;
+}
+
+@media(max-width: 540px) {
+  .favor-content {
+    padding: 40px 20px;
+  }
+}

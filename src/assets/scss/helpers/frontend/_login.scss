@@ -1,0 +1,71 @@
+.bg-color {
+  width           : 100%;
+  height          : 100%;
+  background-color: $coffee-black;
+  position        : fixed; //單獨改變元件背景色
+}
+
+.text-spacing {
+  letter-spacing: 2px;
+}
+
+.login {
+  width           : 500px;
+  padding         : 40px;
+  border          : 2px solid $coffee-yellow;
+  border-radius   : 10px;
+  position        : absolute;
+  top             : 50%;
+  left            : 50%;
+  transform       : translate(-50%, -50%);
+  background-color: $coffee-black;
+  z-index         : 3;
+}
+
+@media(max-width: 576px) {
+  .login {
+    width: 90%;
+  }
+}
+
+.input-icon {
+  position: relative;
+
+  .icon {
+    position : absolute;
+    top      : 50%;
+    left     : 15px;
+    transform: translateY(-50%);
+  }
+
+  .input-style {
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    outline           : none;
+    border            : 2px solid transparent;
+    border-radius     : 10px;
+    padding           : 20px;
+    text-indent       : 20px;
+    color             : $coffee-black;
+    background-color  : rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+      color         : #FFF;
+      letter-spacing: 2px;
+      font-size     : $font-size-sm;
+    }
+
+    &:focus {
+      border: 2px solid rgb(245, 217, 140);
+    }
+  }
+}
+
+.btn-style {
+  border-radius : 10px;
+  letter-spacing: 2px;
+
+  &:active {
+    background-color: rgb(255, 191, 102) !important;
+  }
+}
