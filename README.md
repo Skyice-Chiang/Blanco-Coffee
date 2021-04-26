@@ -1,24 +1,6 @@
-# blanco-coffee
+# Blanco Coffee
+Demo: https://skyice-chiang.github.io/blanco-coffee/
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 聲明
+- 此網站僅作為個人練習用，無商業用途
+- 圖片來源:  [unsplash](https://unsplash.com/)、Google圖片、PCHome圖片
