@@ -8,17 +8,20 @@
         <table class="table table-hover table-dark table-borderless bg-transparent mb-0">
           <thead>
             <tr class="text-c-brown">
-              <th width="200">項目</th>
-              <th width="100">數量</th>
-              <th width="100">金額</th>
-              <th width="20">刪除</th>
+              <th width="900">項目</th>
+              <th width="100">
+                <span class="d-none d-sm-block">數量</span>
+                <span class="d-block d-sm-none text-right">金額</span>
+              </th>
+              <th class="phone-none" width="100">金額</th>
+              <th>刪除</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item, i) in carts" :key="i">
               <td class="align-middle text-wrap">{{ item.title }}</td>
               <td class="align-middle">
-                <div class="input-group flex-nowrap d-none d-md-flex" style="width: 160px">
+                <div class="input-group" style="width: 130px">
                   <div class="input-group-prepend">
                     <button class="btn btn-secondary" type="button" @click="item.qty -= 1" :disabled="item.qty <= 1">
                       -
@@ -32,9 +35,9 @@
                     </button>
                   </div>
                 </div>
-                <span class="d-block d-md-none"> x {{ item.qty }}</span>
+                <span class="d-block d-md-none text-center mt-3 mt-md-0">{{ (item.price * item.qty) | currency }}</span>
               </td>
-              <td class="align-middle text-right">
+              <td class="align-middle text-right phone-none">
                 {{ (item.price * item.qty) | currency }}
               </td>
               <td class="align-middle">
@@ -44,7 +47,8 @@
               </td>
             </tr>
             <tr class="border-top">
-              <td colspan="3"></td>
+              <td class="d-tale-ceil d-md-none" colspan="2"></td>
+              <td class="phone-none" colspan="3"></td>
               <td>小計 {{ total | currency }}</td>
             </tr>
           </tbody>

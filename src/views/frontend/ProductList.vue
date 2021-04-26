@@ -272,7 +272,7 @@ export default {
     const vm = this
     const dropdown = document.querySelectorAll('.dropdown')
     // 第二層選單
-    $('.second-menu').click(function (e) {
+    $('.second-menu').click((e) => {
       const menuIndex = e.currentTarget.dataset.menu
       const menuTitle = $(e.target).parent()[0].innerText
       e.preventDefault()

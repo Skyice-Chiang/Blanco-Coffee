@@ -62,7 +62,6 @@ export default {
   computed: {
     favorProduct () {
       const vm = this
-      let showProduct = []
       const favorId = vm.favorId
       const currentPage = vm.pagination.current_page
       vm.$bus.$on('favorChange', (item) => { vm.favorId = item })
@@ -79,9 +78,7 @@ export default {
         vm.pagination.has_next = false
       }
 
-      showProduct = newProduct.filter((item, index) => { return index >= currentPage * 9 - 9 && index <= currentPage * 9 - 1 })
-
-      return showProduct
+      return newProduct.filter((item, index) => { return index >= currentPage * 9 - 9 && index <= currentPage * 9 - 1 })
     }
   },
   methods: {

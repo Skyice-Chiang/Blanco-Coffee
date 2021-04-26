@@ -1,6 +1,6 @@
-.cart-set {
-  height: 100vh;
-}
+// .cart-set {
+//   height: 100vh;
+// }
 
 /* cart list */
 .border-style {
@@ -8,7 +8,15 @@
   border       : 1px solid $coffee-yellow;
   border-radius: 0.25em;
 }
-
 .text-wrap{
   white-space: normal;
+}
+.phone-none{
+  display: none;
+}
+@media(min-width: 767px){
+  .phone-none{
+    display: table-cell;
+    vertical-align: inherit;
+  }
 }
