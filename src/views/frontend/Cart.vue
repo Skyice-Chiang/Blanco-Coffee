@@ -8,20 +8,20 @@
         <table class="table table-hover table-dark table-borderless bg-transparent mb-0">
           <thead>
             <tr class="text-c-brown">
-              <th width="900">項目</th>
+              <th width="300">項目</th>
               <th width="100">
                 <span class="d-none d-sm-block">數量</span>
                 <span class="d-block d-sm-none text-right">金額</span>
               </th>
               <th class="phone-none" width="100">金額</th>
-              <th>刪除</th>
+              <th width="20">刪除</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item, i) in carts" :key="i">
               <td class="align-middle text-wrap">{{ item.title }}</td>
               <td class="align-middle">
-                <div class="input-group" style="width: 130px">
+                <div class="input-group" style="width: 140px">
                   <div class="input-group-prepend">
                     <button class="btn btn-secondary" type="button" @click="item.qty -= 1" :disabled="item.qty <= 1">
                       -
