@@ -1,5 +1,6 @@
 # Blanco Coffee
-![Blanco Coffee 首頁畫面](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb5304f7-682a-40d0-b9d0-581e62b5911f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210514%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210514T022434Z&X-Amz-Expires=86400&X-Amz-Signature=8337e44687a087f317baa0298393a41b33ab13d461caa541d048fd34a61a37ce&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+[![1.png](https://i.postimg.cc/nLGdDCfP/1.png)](https://postimg.cc/jWCQVq5H)
+
 Demo: https://skyice-chiang.github.io/blanco-coffee/
 
 ## 簡介
@@ -40,20 +41,19 @@ Demo: https://skyice-chiang.github.io/blanco-coffee/
 ## 特色功能介紹
 > 回饋訊息與購車數量圖示更新 : 搭配event bus掛載到Vue原型下，讓不同的Vue實例可以共享
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cb777671-17d0-4017-a730-46951e72b0bf/.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210514%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210514T035543Z&X-Amz-Expires=86400&X-Amz-Signature=1c19d0e05d950d54b51ae57adfa480bc0e44edf4d2fee20db82acf3e343bc9b9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22.png%22)
+[![2.png](https://i.postimg.cc/X7rDzj9r/2.png)](https://postimg.cc/ZChc9h7m)
 
 
 > 訂閱功能 : 信箱驗證格式是否正確與有無使用過、點擊優惠碼即複製
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0509984b-24c3-447d-8042-ecb12f8e44dd/.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210514%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210514T041434Z&X-Amz-Expires=86400&X-Amz-Signature=1b872ad65c50466936eecf7a1be66d31ab8523a3e13c8bf35fdad550b1360069&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22.png%22)
+[![3.png](https://i.postimg.cc/TP671nFb/3.png)](https://postimg.cc/qN1XZ6kB)
 
 > 產品列表分類 : 篩選後顯示想要的產品
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7b9d12db-41dc-4df8-bfe9-4576e0f45196/.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210514%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210514T060423Z&X-Amz-Expires=86400&X-Amz-Signature=10aee8140b5a98bf07032da713b37edaecd21fd38b8fca4fe05b18f107db42e0&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22.png%22)
+[![4.png](https://i.postimg.cc/Z53sJw7Z/4.png)](https://postimg.cc/18mrHr1Y)
 
 > 訂單流程 : 輸入優惠碼執行價錢打折、驗證客戶資料內容
-
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/08dbe599-4e80-4e92-a17f-22d498d39bfb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210514%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210514T061848Z&X-Amz-Expires=86400&X-Amz-Signature=f0635b0ab4df0a78ea2414ef34d2ce4fde6726cd9165d1fbfb92491614e1054f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+[![5.png](https://i.postimg.cc/yY2rqMTv/5.png)](https://postimg.cc/sv9J70qh)
 
 ## Vue.filter過濾功能
 - [千分號與金錢符號](https://github.com/Skyice-Chiang/blanco-coffee/blob/master/src/filters/currency.js)
